@@ -29,13 +29,13 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-// Responsive
+// Responsive breakpoints
 @mixin breakpoint($point) {
 	@if $point == desktop {
 	  @media (max-width: 1440px) { @content ; }
    	}
 	@else if $point == laptop {
-	  @media (max-width: 1200px) { @content ; }
+	  @media (max-width: 1280px) { @content ; }
    	}
 	 @else if $point == tablet {
 	  @media (max-width: 1024px) { @content ; }
@@ -52,8 +52,8 @@
 @mixin container {
 	margin-right: auto;
   	margin-left: auto;
-  	padding-right: 1.5rem;
-  	padding-left: 1.5rem;
+  	padding-right: $grid__gap;
+  	padding-left: $grid__gap;
 	
 	// 768px Tablet
 	@media only screen and (min-width: 48em) {
@@ -72,7 +72,7 @@
 
 	// +1440px Desktop
 	@media only screen and (min-width: 90.0625em) {
-		width: 88rem;
+		//width: 88rem;
 	}
 }
 
