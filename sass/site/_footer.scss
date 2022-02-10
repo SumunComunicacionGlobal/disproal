@@ -1,0 +1,35 @@
+.site-info {
+
+    .legal {
+        display: flex;
+        align-items: center;
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+    
+            li:before {
+                content: '|';
+                
+            }
+
+            li:first-child {
+                margin-left: $space-0;
+                &:before { content: '';}
+            }
+    
+            a {
+                line-height: 1;
+                padding: 0 $space-0;
+                color: $color__text-main;
+                &:hover {
+                    color: $color__secondary;
+                }
+                
+            }
+        } 
+    } 
+
+}

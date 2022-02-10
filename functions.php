@@ -50,6 +50,7 @@ function disproal_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'disproal' ),
+			'footer-menu' => esc_html__( 'Footer legal', 'disproal' ),
 		)
 	);
 

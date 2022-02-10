@@ -13,17 +13,25 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'disproal' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'disproal' ), 'WordPress' );
-				?>
-			</a>
+			<div class="container">
+				<div class="row middle-xs">
+					<div class="col-xs-12 col-md-4">
+						<?php printf( esc_html__( '© 2020 Disproal S.L, All rights reserved', 'disproal' ));?>
+					</div>
+					<div class="col-xs-12 col-md-8 end-xs legal">
+						<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'footer-menu',
+									'menu_id'        => 'footer-legal',
+								)
+							);
+						?>
+					</div>
+				</div>
+			</div>
+			
 			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'disproal' ), 'disproal', '<a href="https://disproal.net/">Alvaro Rubioc</a>' );
-				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
