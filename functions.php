@@ -121,11 +121,6 @@ add_action( 'after_setup_theme', 'disproal_content_width', 0 );
 require get_template_directory() . '/inc/enqueue-scripts.php';
 
 /**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
  * Register widget area.
  */
 require get_template_directory() . '/inc/widgets-areas.php';

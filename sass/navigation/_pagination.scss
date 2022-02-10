@@ -1,7 +1,7 @@
 .pagination {
     display: flex;
     justify-content: center;
-    margin: $space-xl 0;
+    margin: $space-6 0;
 
     .nav-links {
         display: flex;
@@ -9,10 +9,10 @@
         a, span {
             background-color: $color__link;
             color: $color__white;
-            padding: $space-xxs;
+            padding: $space-0;
             border-radius: 100%;
-            width: $space-md;
-            height: $space-md;
+            width: $space-3;
+            height: $space-3;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -20,7 +20,7 @@
         }
 
         .next.page-numbers, .prev.page-numbers {
-            width: $space-xxxl;
+            width: $space-9;
             border-radius: $border__radius;
         }
 

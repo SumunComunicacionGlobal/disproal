@@ -4,7 +4,7 @@ input[type="reset"],
 input[type="submit"] {
 	@include button;
 	@include btn(primary__fill);
-    padding: 0.65rem $space-md;
+    padding: 0.65rem $space-3;
 	border: 0;
 	
 	&:active {
@@ -12,7 +12,7 @@ input[type="submit"] {
 	}
 
 	span, strong {
-		margin: 0 $space-xxs 0 $space-xxs;
+		margin: 0 $space-0 0 $space-0;
 	}
 	
 	.icon {

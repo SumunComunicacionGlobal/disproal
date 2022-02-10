@@ -6,6 +6,10 @@
 		@include container;
 	}
 
+	& > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+		@include container;
+	}
+
 	& > [class*="wp-block-"]:not(.alignfull).alignwide {
 		margin-right: 1.5rem;
 		margin-left: 1.5rem;
@@ -17,9 +21,10 @@
 	
 }
 
+
 .wp-block-columns {
 
-	margin-bottom: $space-xl;
+	margin-bottom: $space-6;
 
 	&.has-background {
 		padding: 0;	
@@ -30,7 +35,7 @@
 .wp-block-group {
 
 	&.has-background {
-    	padding: $space-xl 0 $space-xl 0;
+    	padding: $space-6 0 $space-6 0;
     	margin-top: 0;
 		margin-bottom: 0;
 	}
@@ -39,7 +44,7 @@
 		margin-bottom: 0;
 
 		.wp-block-columns {
-			margin-bottom: $space-md;
+			margin-bottom: $space-3;
 		}
 	}
 }

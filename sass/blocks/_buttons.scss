@@ -1,7 +1,7 @@
 // Custom Buttons
 .wp-block-button:not(.is-style-with-icon) .wp-block-button__link{
 	@include button;
-    padding: 0.65rem $space-md;
+    padding: 0.65rem $space-3;
 }
 
 .wp-block-button__link {

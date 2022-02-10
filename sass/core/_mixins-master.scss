@@ -54,20 +54,24 @@
   	margin-left: auto;
   	padding-right: 1.5rem;
   	padding-left: 1.5rem;
-
+	
+	// 768px Tablet
 	@media only screen and (min-width: 48em) {
-		width: 46rem;
+		//width: 46rem;
 	}
 
+	// 1024px Tablet
 	@media only screen and (min-width: 64em) {
-		width: 62rem;
-	}
-
-	@media only screen and (min-width: 80em) {
-		width: 72rem;
+		//width: 62rem;
 	}
 	
-	@media only screen and (min-width: 91em) {
+	// 1280px Laptop
+	@media only screen and (min-width: 80em) {
+		width: 78rem; // 1248px - 24px padding = 1200px 
+	}
+
+	// +1440px Desktop
+	@media only screen and (min-width: 90.0625em) {
 		width: 88rem;
 	}
 }
