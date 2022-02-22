@@ -35,3 +35,15 @@ function disproal_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'disproal_pingback_header' );
+
+
+/**
+ * Remove "category:" from archive taxonomy, etc
+ */
+function prefix_category_title( $title ) {
+    if ( is_tax() ) {
+        $title = single_cat_title( '', false );
+    }
+    return $title;
+}
+add_filter( 'get_the_archive_title', 'prefix_category_title' );

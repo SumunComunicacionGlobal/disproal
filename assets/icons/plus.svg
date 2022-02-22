@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>More Copy 4</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-2" points="0 0.0005 22.7216 0.0005 22.7216 22.7215 0 22.7215"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME" transform="translate(-105.000000, -5050.000000)">
+            <g id="ULTIMOS-PRODUCTOS" transform="translate(104.000000, 4475.000000)">
+                <g id="More-Copy-4" transform="translate(1.000000, 575.000000)">
+                    <circle id="Oval" fill="#F2727F" cx="15" cy="15" r="15"></circle>
+                    <g filter="url(#filter-1)" id="Group-3">
+                        <g transform="translate(4.000000, 4.000000)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M21.7216,10.3605 L12.3606,10.3605 L12.3606,1.0005 C12.3606,0.4475 11.9126,0.0005 11.3606,0.0005 C10.8076,0.0005 10.3606,0.4475 10.3606,1.0005 L10.3606,10.3605 L0.9996,10.3605 C0.4476,10.3605 -0.0004,10.8075 -0.0004,11.3605 C-0.0004,11.9135 0.4476,12.3605 0.9996,12.3605 L10.3606,12.3605 L10.3606,21.7215 C10.3606,22.2745 10.8076,22.7215 11.3606,22.7215 C11.9126,22.7215 12.3606,22.2745 12.3606,21.7215 L12.3606,12.3605 L21.7216,12.3605 C22.2746,12.3605 22.7216,11.9135 22.7216,11.3605 C22.7216,10.8075 22.2746,10.3605 21.7216,10.3605" id="Fill-1" fill="#020303" mask="url(#mask-3)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

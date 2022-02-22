@@ -3,8 +3,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	@include button;
-	@include btn(primary__fill);
     padding: 0.65rem $space-3;
+	background-color: $color__primary;
 	border: 0;
 	
 	&:active {

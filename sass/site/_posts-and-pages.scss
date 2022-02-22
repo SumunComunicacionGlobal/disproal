@@ -1,3 +1,23 @@
 #page {
 	position: relative;
 }
+
+.single-products {
+	
+	h2.entry-title {
+		font-family: $font__main;
+	}
+}
+
+#related-products {
+	
+	p.text-h2 {
+		font-family: $font__main;
+	}
+}
+
+#tax-buttons {
+	.wp-block-button {
+		margin: $space-0;
+	}
+}

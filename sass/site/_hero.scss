@@ -1,3 +1,48 @@
 #hero {
     background: $color__primary;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    padding: $space-3;
+    display: flex;
+    align-items: center;
+
+    .tax-categoy-products & {
+        justify-content: end;
+    }
+}
+
+
+
+div#n2-ss-2-arrow-previous {
+  border-bottom-right-radius: 999px !important;
+  border-top-right-radius: 999px !important;
+  @include breakpoint(mobile) {
+    width: 30px !important;
+    height: 60px !important;
+  }
+}
+
+div#n2-ss-2-arrow-next {
+  border-bottom-left-radius: 999px !important;
+  border-top-left-radius: 999px !important;
+  justify-content: flex-end;
+  @include breakpoint(mobile) {
+    width: 30px !important;
+    height: 60px !important;
+  }
+}
+
+
+section.carousel {
+  position: relative;
+
+  .scroll-down {
+    position: absolute;
+    bottom: -60px;
+    left: 32px;
+    z-index: 3;
+    width: 140px;
+  }
+
 }

@@ -1,10 +1,37 @@
 .wp-block-query {
 	
-	.wp-block-post-title a {
-		color: $color__primary-60;
-
-		&:hover{
-			color: $color__secondary;
+	.wp-block-post-title{
+		margin-bottom: 0;
+		
+		a {
+			font-family: $font__main;
+			@include font-size(1.5);
 		}
+
+	} 
+
+	.wp-block-post-excerpt__more-link {
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+
+		&::before {
+			display: inline-flex;
+			content: '';
+			background-image: url('assets/icons/plus.svg');
+			background-size: 32px 32px;
+			background-repeat: no-repeat;
+			height: 32px;
+			width: 32px;
+			padding-right: 3rem;
+		}
+	}
+}
+
+.archive .wp-block-query {
+	
+	img {
+		height: 300px;
+		object-fit: contain;
 	}
 }

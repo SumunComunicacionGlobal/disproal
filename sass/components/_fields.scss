@@ -16,19 +16,18 @@ input[type="color"],
 select,
 textarea {
 	color: $color__text-main;
-	border-radius: 4px;
 	padding: $space-0;
 	width: 100%;
-	background-color: $color__gray;
-	border: solid 1px $color__gray;
+	background-color: $color__white;
+	border: solid 2px $color__primary;
 
 	&:focus {
-		color: $color__primary-10;
-		border: solid 1px $color__primary;
+		color: $color__text-main;
+		border: solid 2px $color__primary-40;
 	}
 
 	&.error {
-		border: 1px solid $color__error;
+		border: 2px solid $color__error;
 	}
 }
 

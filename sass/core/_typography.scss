@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
 
 /* COPY */
 
@@ -80,10 +81,6 @@ big {
     }
 }
  
-strong {
-    font-family: $font__heading;
-}
- 
 svg.icon {
     fill: currentColor;
 }
@@ -100,10 +97,14 @@ h1, h2, h3, h4, h5, h6,
     line-height: $font__line-height-header;
 }
 
+.text-baskerville {
+    font-family: $font__heading-serif;
+}
+
 h1, .text-h1  {
-	font-size: 3em;
-	@include breakpoint(laptop) {
-		font-size: 2.5em;
+	font-size: 4em;
+	@include breakpoint(mobile) {
+		font-size: 3.5em;
     }
     
     &.display {
@@ -114,15 +115,14 @@ h1, .text-h1  {
 }
 
 h2, .text-h2 {
-    font-size: 2em;
-    font-weight: bold;
-	@include breakpoint(laptop) {
-		font-size: 1.8em;
+    font-size: 3em;
+	@include breakpoint(tablet) {
+		font-size: 2.5em;
 	}
 }
 
 h3, .text-h3 {
-	font-size: 1.7em;
+	font-size: 2em;
 	@include breakpoint(laptop) {
 		font-size: 1.5em;
 	}
@@ -130,7 +130,6 @@ h3, .text-h3 {
 
 h4, .text-h4 {
     font-size: 1.5em;
-    font-weight: bold;
     @include breakpoint(laptop) {
 		font-size: 1.25em;
 	}

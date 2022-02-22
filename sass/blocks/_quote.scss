@@ -1,9 +1,11 @@
 .wp-block-quote {
 	margin-top: $space-6;
 	margin-bottom: $space-6;
+	font-family: $font__heading-serif;
 	
 	p {
 		margin-bottom: .5em;
+		@include font-size(1.5);
 	}
 	
 	cite {

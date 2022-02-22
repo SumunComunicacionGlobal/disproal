@@ -24,3 +24,46 @@
     background-color: $color__white;
 }
 
+
+#wp-container-6214ef56de4b7 {
+    background-image: url('assets/img/iwave.svg');
+    aspect-ratio: 960/300;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 50px;
+        transform: rotateY(180deg);
+    }
+
+    .shape-fill {
+        fill: #FFFFFF;
+    }
+
+    .spacer {
+        aspect-ratio: 960/300;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    }
+    
+    #wp-container-6214ef56de4b7 {
+        background-image: url('assets/img/iwave.svg');
+    }
+    
+    
+}

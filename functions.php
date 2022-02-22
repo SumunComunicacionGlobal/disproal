@@ -46,6 +46,9 @@ function disproal_setup() {
 		*/
 	add_theme_support( 'post-thumbnails' );
 
+	// Default thumbnail size
+	add_image_size( 'img-card', 360, 360 );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
@@ -131,6 +134,11 @@ require get_template_directory() . '/inc/widgets-areas.php';
  */
 require get_template_directory() . '/inc/gutenberg-support.php';
 
+/**
+ * CPT
+ */
+require get_template_directory() . '/inc/custom-post-type.php';
+
 
 /**
  * Custom template tags for this theme.
@@ -154,3 +162,30 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
+
+function my_wp_nav_menu_objects( $items, $args ) {
+	
+	// loop
+	foreach( $items as &$item ) {
+		
+		// vars
+		$icon = get_field('icon_menu', $item);
+		
+		
+		// append icon
+		if( $icon ) {
+			
+			$item->title .= ' <img src="'.$icon.'">';
+			
+		}
+		
+	}
+	
+	
+	// return
+	return $items;
+	
+}

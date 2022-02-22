@@ -1,4 +1,12 @@
+.site-footer {
+    background-image: url('assets/img/bg-footer.png');
+    padding: $space-6 0 0;
+    margin-top: $space-8;
+}
+
 .site-info {
+    padding: $space-1 0;
+    color: $color__white;
 
     .legal {
         display: flex;
@@ -9,23 +17,26 @@
             padding: 0;
             margin: 0;
             display: flex;
+            
+            @include breakpoint(mobile) {
+                margin-top: $space-1;
+            }
     
             li:before {
                 content: '|';
+                padding: $space-0;
                 
             }
 
             li:first-child {
-                margin-left: $space-0;
-                &:before { content: '';}
+                &:before { content: none;}
             }
     
             a {
                 line-height: 1;
-                padding: 0 $space-0;
-                color: $color__text-main;
+                color: $color__white;;
                 &:hover {
-                    color: $color__secondary;
+                    color: $color__primary-10;
                 }
                 
             }

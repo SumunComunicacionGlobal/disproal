@@ -1,11 +1,8 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying all category products
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * Template Name: Productos
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -19,7 +16,9 @@ get_header();
 
 		<?php
 		
-		get_template_part( 'template-parts/hero', get_post_type() ); 
+		get_template_part( 'template-parts/hero', get_post_type() );
+
+		get_template_part( 'template-parts/taxonomies-list' );
 		
 		while ( have_posts() ) :
 			the_post();

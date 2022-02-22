@@ -14,3 +14,11 @@
 	clear: both;
 	@include center-block;
 }
+
+.move-up {
+    margin-top: -100px;
+
+	@include breakpoint(mobile) {
+		margin-top: $space-4;
+	}
+}

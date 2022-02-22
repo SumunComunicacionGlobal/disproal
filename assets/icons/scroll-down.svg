@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="193px" height="125px" viewBox="0 0 193 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME" transform="translate(-103.000000, -1012.000000)">
+            <g id="Group-2" transform="translate(79.000000, 1012.000000)">
+                <g id="Group" transform="translate(24.964286, 0.000000)">
+                    <g id="SCROLL-DOWN" transform="translate(50.595238, 31.250000)">
+                        <circle id="Oval-Copy-3" fill="#6C5B7B" cx="46.4404762" cy="46.75" r="47"></circle>
+                        <g id="Group" transform="translate(26.440476, 39.750000)" fill="#FFFFFF">
+                            <g id="Link" transform="translate(20.000000, 7.000000) rotate(-270.000000) translate(-20.000000, -7.000000) ">
+                                <polygon id="Fill-1" points="28.172 -4.22772928e-14 28.172 5.285 2.32110627e-13 5.285 2.32110627e-13 8.61 28.172 8.61 28.172 13.8824 39.6213333 6.9412"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <circle id="Oval-Copy-10" fill="#6C5B7B" cx="174.85119" cy="17.1130952" r="17.1130952"></circle>
+                    <circle id="Oval-Copy-11" fill="#6C5B7B" cx="11.9047619" cy="34.2261905" r="11.9047619"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

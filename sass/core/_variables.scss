@@ -1,7 +1,24 @@
 /* main colors */
+$primary-colors: (
+    primary: #C06C84,
+    primary-10: #F8B195,
+    primary-20: #FDBB63,
+    primary-30: #FDA26B,
+    primary-40: #FC8862,
+    primary-50: #EB6859,
+    primary-60: #F2727F,
+);
+
+$secondary-colors: (
+    secondary: #6C5B7B,
+    brown: #704E2C,
+    blue: #355C7D,
+    white: #FFFFFF
+);
+
 $color__primary: #C06C84;
 $color__secondary: #6C5B7B;
-$color__accent: #355C7D;
+
 
 /* primary colors */
 $color__primary-60: #F2727F;
@@ -12,8 +29,8 @@ $color__primary-20: #FDBB63;
 $color__primary-10: #F8B195;
 
 /* text colors */
-$color__link: $color__accent;
-$color__link-hover: $color__secondary;
+$color__link: #355C7D;
+$color__link-hover: #6C5B7B;
 $color__text-main: #000000;
 
 /* feedback */
@@ -27,12 +44,16 @@ $color__gray: #c4cdd5;
 $color__gray-dark: #6D7278;
 $color__white: #ffffff;
 
+
+$theme-colors: map-merge($primary-colors, $secondary-colors);
+
 /* Border radius */
 $border__radius: 24px;
 
 /* Fonts */
 $font__main: 'Nunito', sans-serif;
 $font__heading: 'Bebas Neue', cursive;
+$font__heading-serif: 'Libre Baskerville', serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
@@ -59,5 +80,9 @@ $space-9: calc(6 * #{$space__unit}); // 96px
 $space-10: calc(7 * #{$space__unit}); // 112px
 
 /* Layout, width and gap */
-$grid__gap-row: -2em;
 $grid__gap: 2em;
+$grid__gap-row: -$grid__gap;
+
+
+
+
