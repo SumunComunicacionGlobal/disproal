@@ -7,8 +7,8 @@
 	}
 
 	& > [class*="wp-block-"]:not(.alignfull).alignwide {
-		margin-right: 1.5rem;
-		margin-left: 1.5rem;
+		margin-right: 2rem;
+		margin-left: 2rem;
 	}
 
 	.alignfull > .wp-block-group__inner-container, .alignfull > .wp-block-cover__inner-container {	
@@ -48,6 +48,6 @@
 .is-style-container-fluid {
 	margin-right: auto;
   	margin-left: auto;
-  	padding-right: 1.5rem;
-  	padding-left: 1.5rem;
+  	padding-right: 2rem;
+  	padding-left: 2rem;
 }
