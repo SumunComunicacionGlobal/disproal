@@ -18,7 +18,7 @@
 		&::before {
 			display: inline-flex;
 			content: '';
-			background-image: url('assets/icons/plus.svg');
+			background-image: url("assets/icons/plus.svg");
 			background-size: 32px 32px;
 			background-repeat: no-repeat;
 			height: 32px;
@@ -28,10 +28,11 @@
 	}
 }
 
-.archive .wp-block-query {
-	
-	img {
-		height: 300px;
-		object-fit: contain;
+.archive, .single-products {
+	.wp-block-query {
+		img {
+			height: 300px;
+			object-fit: contain;
+		}
 	}
 }
