@@ -34,7 +34,7 @@
 		</div><!-- .site-branding -->
 		
 		<div class="site-btns-nav">
-			<a href="#colophon" class="contact-nav-btn">
+			<a href="#contacto" class="contact-nav-btn">
 				<span class="screen-reader-text"><?php esc_html_e( 'Contacto', 'disproal' ); ?></span>
 				<img src="<?php echo get_template_directory_uri().'/assets/icons/mail.svg';?>" />
 			</a>

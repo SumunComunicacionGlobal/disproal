@@ -26,7 +26,7 @@ $link = get_field('link_tax', $tax);
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-4">
-						<h2 <?php echo $color_text ;?>><?php the_field('title_tax', get_queried_object());?><h2>
+						<h2 <?php echo $color_text ;?>><?php the_field('title_tax', get_queried_object());?></h2>
 					</div>
 					<div class="col-xs-12 col-md-8">    
 						<?php the_archive_description( '<div class="archive-description big">', '</div>' ); ?>
