@@ -19,40 +19,41 @@
                 <?php disproal_post_thumbnail(); ?>
             </div>
             <div class="col-xs-12 col-md-6">
+                <hr class="wp-block-separator is-style-dots">
                 <?php
                     the_title( '<h2 class="entry-title">', '</h2>' );
                     the_excerpt();
                 ?>
+                <hr class="wp-block-separator is-style-dots">
+                <div class="mt-4">
+
+                    <?php
+                    the_content(
+                        sprintf(
+                            wp_kses(
+                                /* translators: %s: Name of current post. Only visible to screen readers */
+                                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'disproal' ),
+                                array(
+                                    'span' => array(
+                                        'class' => array(),
+                                    ),
+                                )
+                            ),
+                            wp_kses_post( get_the_title() )
+                        )
+                    );
+
+                    wp_link_pages(
+                        array(
+                            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'disproal' ),
+                            'after'  => '</div>',
+                        )
+                    );
+                    ?>
+                </div><!-- .entry-content -->
             </div>    
         </div>    
     </div>
-        
-    <div class="entry-content mt-4">
-        
-        <?php
-        the_content(
-            sprintf(
-                wp_kses(
-                    /* translators: %s: Name of current post. Only visible to screen readers */
-                    __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'disproal' ),
-                    array(
-                        'span' => array(
-                            'class' => array(),
-                        ),
-                    )
-                ),
-                wp_kses_post( get_the_title() )
-            )
-        );
-
-        wp_link_pages(
-            array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'disproal' ),
-                'after'  => '</div>',
-            )
-        );
-        ?>
-    </div><!-- .entry-content -->
 
     <footer class="entry-footer">
         <?php disproal_entry_footer(); ?>

@@ -6,8 +6,15 @@
     height: 8px;
 }
 
-.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.is-style-dots) {
     width: 168px;
 	color: $color__primary;
 	border-bottom: 8px solid;
+}
+.wp-block-separator.is-style-dots {
+	border-top: 4px dotted;
+	opacity: .1;
+	&::before {
+		content: none;
+	}
 }
