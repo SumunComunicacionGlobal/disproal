@@ -22,7 +22,7 @@ if( $related ): ?>
     
     <div id="related-products" class="container mb-5 mt-5">
         
-        <p class="text-h2 has-blue-color center-xs"><?php esc_html_e( 'Otros productos', 'disproal' ); ?></p>
+        <p class="text-h2 has-blue-color text-h3"><?php esc_html_e( 'También te recomendamos', 'disproal' ); ?></p>
         
         <div class="grid-columns-4 mt-6">	
             <?php

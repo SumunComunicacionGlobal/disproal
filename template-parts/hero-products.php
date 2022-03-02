@@ -5,13 +5,13 @@
     
     // vars
     $get_image_url = get_field('image_tax', $tax);
-    $image_background = 'background-image: url('.$get_image_url.')';
+    $image_background = 'style="background-image: url('.$get_image_url.')"';
     $color = get_field('color_tax', $tax);
     $color_text = 'style="color:'.$color.';"';
     
     ?>
 
-    <header id="hero" class="entry-header-archive" style="<?php echo $image_background ;?>">
+    <header id="hero" class="entry-header-archive" <?php echo $image_background ;?>>
         <div class="container">
             <?php
                 echo '<h1 class="entry-title end-xs" '.$color_text.'>', single_cat_title(),'</h1>';

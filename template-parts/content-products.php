@@ -7,7 +7,13 @@
  * @package disproal
  */
 
+
+ 
+
+ 
 ?>
+
+
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -15,16 +21,22 @@
 
     <div class="container mt-8 mb-8">
         <div class="row">
+            
             <div class="col-xs-12 col-md-6 center-xs">
                 <?php disproal_post_thumbnail(); ?>
             </div>
+            
             <div class="col-xs-12 col-md-6">
+                
                 <hr class="wp-block-separator is-style-dots">
                 <?php
-                    the_title( '<h2 class="entry-title">', '</h2>' );
-                    the_excerpt();
+                    $terms = get_the_terms( $post->ID , 'category-products' );     
+                    foreach ( $terms as $term ) {}   
                 ?>
-                <hr class="wp-block-separator is-style-dots">
+                <h2 class="entry-title text-h3" style="color:<?php echo the_field ('color_tax', $term ) ;?>"><?php the_title();?></h2> 
+                <hr class="wp-block-separator is-style-dots">    
+                <?php the_excerpt();?>
+    
                 <div class="mt-4">
 
                     <?php
