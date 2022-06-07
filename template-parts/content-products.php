@@ -35,7 +35,11 @@
                 ?>
                 <h2 class="entry-title text-h3" style="color:<?php echo the_field ('color_tax', $term ) ;?>"><?php the_title();?></h2> 
                 <hr class="wp-block-separator is-style-dots">    
-                <?php the_excerpt();?>
+                <?php 
+                    if ( $post->post_excerpt ) {
+                        echo apply_filters( 'the_content', $post->post_excerpt );
+                    }
+                ?>
     
                 <div class="mt-4">
 
