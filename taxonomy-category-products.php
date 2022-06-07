@@ -31,15 +31,29 @@ $link = get_field('link_tax', $tax);
 					<div class="col-xs-12 col-md-8">    
 						<?php the_archive_description( '<div class="archive-description big">', '</div>' ); ?>
 						<?php
-						if( $link ): 
+						if( $link ) : 
+						
 							$link_url = $link ['url'];
 							$link_title = $link ['title'];
 							$link_target = $link ['target'] ? $link['target'] : '_self';
-							?>
-							<div class="wp-block-button mt-4">
-								<a class="wp-block-button__link has-blue-background-color has-background" style="background-color:<?php echo $color ;?>;"  href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+						
+						elseif( get_url_catalogo() ) :
+						
+							$link_url = get_url_catalogo();
+							$link_title = __( 'Catálogo', 'disproal' );
+							$link_target = '_blank';
+						
+						endif;
+
+						if ( isset( $link_url ) && $link_url ) { ?>
+
+							<div class="wp-block-buttons mt-4">
+								<div class="wp-block-button">
+									<a class="wp-block-button__link has-blue-background-color has-background has-white-color" style="background-color:<?php echo $color ;?>;"  href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+								</div>    
 							</div>    
-						<?php endif; ?>
+
+						<?php } ?>
 					</div>
 				</div>    
 			</div>
