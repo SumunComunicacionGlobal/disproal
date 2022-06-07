@@ -189,3 +189,42 @@ function my_wp_nav_menu_objects( $items, $args ) {
 	return $items;
 	
 }
+
+add_shortcode( 'url_catalogo', 'get_url_catalogo' );
+function get_url_catalogo() {
+	return esc_url( get_theme_mod( 'url_catalogo', false ) );
+}
+
+ function update_menu_link($items){
+
+//look through the menu for items with Label "Link Title"
+    foreach($items as $item){
+
+    	if ( isset( $item->classes ) && in_array( 'url-catalogo', $item->classes ) ) {
+
+            $item->url = get_url_catalogo();
+            $item->target = '_blank';
+
+        }
+    }
+    return $items;
+}
+
+add_filter('wp_nav_menu_objects', 'update_menu_link', 10,2);
+
+add_shortcode( 'titulo', 'get_the_title' );
+
+function productos_pre_get_posts( $query ) {
+	
+	if( is_admin() && !$query->is_main_query() ) {
+		return;
+	}
+	
+	if( is_post_type_archive( 'products' ) || is_tax( 'category-products' ) ) {
+		$query->set('orderby', 'menu_order' );	
+		$query->set('order', 'ASC');
+	}
+
+}
+
+add_action('pre_get_posts', 'productos_pre_get_posts');
